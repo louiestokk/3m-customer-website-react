@@ -12,7 +12,7 @@ const Contact = () => {
             Call to Zantel
             <MdMobileScreenShare className="ftic" />
           </a>
-          <a href="tel:+255779912498">
+          <a href="tel:+255655912498">
             Call to Tigo
             <MdMobileScreenShare className="ftic" />
           </a>
