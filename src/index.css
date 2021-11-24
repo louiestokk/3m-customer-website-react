@@ -1,13 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@700&display=swap");
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+:root {
+  --mainBlue: #0284c7;
+  --darkerBlue: #0369a1;
+  --lightBlue: #0ea5e9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.logo-container {
+  display: flex;
+}
+.logo-container div {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 3px solid #0c4a6e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mainBlue);
+}
+.logo-container h2 {
+  font-size: 1rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.nav-btn {
+  font-size: 1.4rem;
+  margin-left: 0.4rem;
+  margin-right: 1rem;
+  color: var(--darkerBlue);
+  cursor: pointer;
+}
+.logo {
+  width: 200px;
+}
+.con-1 {
+  display: flex;
+  align-items: center;
+}
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.title-container h2 {
+  font-size: 1.1rem;
+  color: var(--darkerBlue);
+  font-family: "Roboto", sans-serif;
+}
+.nav-contact {
+  font-size: 1.5rem;
+}
+.nav-contact a {
+  text-decoration: none;
+  margin: 0 0.3rem;
+  cursor: pointer;
+  color: var(--darkerBlue);
+}
+.truck {
+  color: var(--mainBlue);
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+}
+.navlink {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0.5rem;
+  color: var(--darkerBlue);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.navlink:hover {
+  color: var(--lightBlue);
+}
+li {
+  margin: 1rem 0;
+}
+.nav-menu {
+  position: fixed;
+  transform: translateY(-200%);
+  transition: all 0.3s linear;
+  z-index: 10;
+  background: white;
+  width: 100%;
+}
+.show {
+  transform: translateY(0);
+  z-index: 10;
+}
+.banner-container {
+  top: 7%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--lightBlue);
+  height: 360px;
+  width: 100%;
+}
+.banner-container div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+.banner-container h1 {
+  color: white;
+  margin-right: 0.6rem;
+  font-size: 1.3rem;
+}
+.car {
+  font-size: 2rem;
+  color: var(--darkerBlue);
+  font-weight: bold;
+}
+.divider {
+  margin: 0.5rem 0;
+  width: 11rem;
+  height: 2px;
+  background: var(--darkerBlue);
+}
+.check-con {
+  margin-top: 0.5rem;
+  color: white;
+}
+.check-con p {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+.check {
+  font-size: 1.2rem;
+}
+.btn-container {
+  margin-top: 1.6rem;
+}
+.btn {
+  border: none;
+  padding: 0.35rem;
+  margin: 0 0.5rem;
+  border-radius: 4px 4px;
+  background: white;
+  color: white;
+}
+.btn-link {
+  text-decoration: none;
+  color: var(--mainBlue);
+}
+.btn:hover {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.btn-link:hover {
+  color: white;
+}
+.car {
+  transition: all 1s linear;
+  animation: bounce 5s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(-1200%);
+  }
+  50% {
+    transform: translateX(500%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.supp-container {
+  position: absolute;
+  top: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.spc {
+  width: 140px;
+  height: 140px;
+  background: var(--lightBlue);
+  margin: 0.7rem 0.7rem;
+  border-radius: 50%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spc p {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0.3rem 0;
+}
+.iicc {
+  color: white;
+  font-size: 2.4rem;
+}
+.delare {
+  width: 60px;
+  height: 1px;
+  background: white;
+  margin-top: 0.3srem;
+}
+.reklam-container {
+  position: absolute;
+  width: 100%;
+  top: 110%;
+  height: 400px;
+}
+.con {
+  height: 140px;
+  background: var(--lightBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.con h1 {
+  color: white;
+  font-size: 1.3rem;
+}
+.fot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  height: 400px;
+  border-bottom: 1px solid var(--lightBlue);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background: var(--lightBlue);
+}
+.fot p {
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.home-form {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: var(--lightBlue);
+  height: 100%;
+  width: 100%;
+}
+.home-form input {
+  border: none;
+  border-radius: 4px 4px;
+  margin: 0.3rem 0;
+  height: 1.6rem;
+  width: 70%;
+  color: var(--darkerBlue);
+}
+.home-form h2 {
+  color: white;
+}
+.home-form button {
+  width: 5rem;
+  height: 2rem;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 4px 4px;
+  color: white;
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+.fot-icons {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ftic {
+  margin-right: 2rem;
+  cursor: pointer;
+  color: white;
+}
+.stokk {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: var(--darkerBlue);
 }
