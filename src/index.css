@@ -186,7 +186,7 @@ li {
     transform: translateX(-1200%);
   }
   50% {
-    transform: translateX(500%);
+    transform: translateX(200%);
   }
   100% {
     transform: translateX(0);
@@ -317,4 +317,12 @@ li {
   font-size: 0.7rem;
   font-weight: bold;
   color: var(--darkerBlue);
+}
+.num a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.num {
+  margin-top: 1rem;
 }

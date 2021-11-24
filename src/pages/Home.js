@@ -90,7 +90,7 @@ const Home = () => {
             <a href="tel:+255779912498">
               <MdMobileScreenShare className="ftic" />
             </a>
-            <a href="mailto: louiestokk@gmail.com">
+            <a href="mailto: mzeemm1982@gmail.com">
               <HiOutlineMail className="ftic" />
             </a>
             <a

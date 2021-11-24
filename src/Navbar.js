@@ -30,7 +30,7 @@ const Navbar = () => {
           <a href="tel:+255779912498">
             <MdMobileScreenShare />
           </a>
-          <a href="mailto: louiestokk@gmail.com">
+          <a href="mailto: mzeemm1982@gmail.com">
             <HiOutlineMail />
           </a>
         </div>
