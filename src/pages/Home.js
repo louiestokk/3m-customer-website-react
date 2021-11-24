@@ -100,7 +100,7 @@ const Home = () => {
               <GiPositionMarker className="ftic" />
             </a>
           </div>
-          <p>© All Rights Reserved 3M Limited, Stone Town Zanzibar </p>
+          <p>© All Rights Reserved Tripple M Limited, Stone Town Zanzibar </p>
           <span className="stokk">Developer / Stokk Tech Limited</span>
         </div>
       </div>
