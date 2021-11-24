@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { MdMobileScreenShare } from "react-icons/md";
@@ -9,12 +9,15 @@ const Navbar = () => {
   const toggle = () => {
     setShow(!show);
   };
+  const handleClick = (e) => {
+    window.location.href = "/";
+  };
   return (
     <>
       <div className="navbar">
         <div className="con-1">
           <FaBars className="nav-btn" onClick={() => setShow(!show)} />
-          <div className="logo-container">
+          <div className="logo-container" onClick={handleClick}>
             <div>
               <h2>m</h2>
             </div>

@@ -28,6 +28,7 @@ body {
 }
 .logo-container {
   display: flex;
+  cursor: pointer;
 }
 .logo-container div {
   height: 2rem;

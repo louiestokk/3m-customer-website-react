@@ -38,6 +38,7 @@ const Contact = () => {
           <a
             href="https://www.google.com.tr/maps/place/Mji+Mkongwe,+Zanzibar/@-6.1625492,39.1930146,15z/data=!3m1!4b1!4m5!3m4!1s0x185cd059242fbd01:0x9a18e54b0e5a94d8!8m2!3d-6.162222!4d39.1920735"
             target="_blank"
+            rel="noreferrer"
           >
             <GiPositionMarker className="ftic" />
           </a>
